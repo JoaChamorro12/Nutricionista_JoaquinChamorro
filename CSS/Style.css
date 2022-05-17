@@ -1,0 +1,342 @@
+* {
+    padding: unset;
+    margin: unset;
+    box-sizing: border-box;
+}
+
+* {
+    /* Limpiamos márgenes y estilos provenientes de HTML */
+    text-decoration: none;
+    list-style-type: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.centerHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.centerMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#containerGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header header header header"
+        "contenido contenido contenido contenido contenido"
+        "footer footer footer footer footer";
+    min-height: 100vh;
+}
+
+#header {
+    grid-area: header;
+}
+
+#contenido {
+    grid-area: contenido;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+.pagina1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagina1 p {
+    line-height: 1.5;
+}
+
+.pagina1 .item {
+    padding: 30px 30px 30px 0px;
+    box-sizing: border-box;
+}
+
+.itemText {
+    max-width: 50%;
+    text-align: center;
+}
+
+.pagina1 img {
+    border-radius: 5px;
+    max-height: 320px;
+    align-items: right;
+}
+
+.logoe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoe h4 {
+    color: rgb(255, 115, 0);
+}
+
+.logoe h5 {
+    color: green;
+}
+
+.tindex {
+    margin: 40px 0px;
+    color: green;
+}
+
+
+
+.tituloverde {
+    color: rgb(0, 255, 0);
+}
+
+.titulonaranja {
+    color: rgb(240, 76, 0);
+}
+
+.recetario {
+
+    color: rgb(255, 115, 0);
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.tdesayunos {
+
+    color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.formu {
+    display: flex;
+    flex-direction: column;
+}
+
+.botones form {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #E6D5B8;
+}
+
+.divisor {
+    display: flex;
+    content: "";
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 15%;
+    justify-content: center;
+    background-color: black;
+    height: 0.2px;
+    width: 70%;
+
+}
+
+.centercontacto {
+    display: flex;
+    justify-content: center;
+}
+
+.formContacto {
+    min-width: 30%;
+    max-width: 70%;
+}
+
+.LabelContacto {
+    display: inline-flex;
+    width: 100px;
+    text-align: left;
+}
+
+.inputBoxContacto {
+    display: inline-flex;
+    width: 250px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.inputBoxmensaje {
+    display: inline-flex;
+    border: solid 1px;
+    border-radius: 5px;
+}
+
+.botonescontacto {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.redes {
+    display: inline-flex;
+}
+
+.navStyle {
+    background-color: #E6D5B8 !important;
+}
+
+.menuStyle {
+    color: #ffffff !important;
+    font-weight: bold;
+    text-shadow: 1px 1px rgb(92, 92, 92);
+}
+
+.menuStyle:hover {
+    color: #f5f5f5 !important;
+    font-weight: bold;
+
+}
+
+/* Efecto Nav - Menu */
+
+.itemx {
+    position: relative;
+    line-height: 2;
+}
+
+.itemx:before {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #f5f5f5;
+    transition: all 0.8s;
+    position: absolute;
+}
+
+.itemx:hover::before {
+    width: 100%;
+}
+
+.efectCenter:before {
+    left: 50%;
+}
+
+.efectCenter:hover:before {
+    left: 0;
+}
+
+.bordesimg {
+    max-width: 50%;
+    margin-right: 40px;
+}
+
+.texto1 {
+    max-width: 50%;
+    text-align: center;
+}
+
+.textoclass {
+    max-width: 497px;
+}
+
+.divisor2 {
+    display: flex;
+    content: "";
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    background-color: black;
+    height: 0.2px;
+    width: 50%;
+}
+
+.titleDesayuno {
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+}
+
+.imgDesayuno {
+    margin: 0px 0px 20px 0px;
+}
+
+.menuActive {
+    color: rgb(236, 236, 236) !important;
+}
+
+
+
+/* Efecto Nav - Menu  FIN*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+    .pagina1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+@media (min-width: 576px) {
+
+    .pagina1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+    .pagina1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    .pagina1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
