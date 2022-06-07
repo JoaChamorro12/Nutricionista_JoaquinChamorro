@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Plus+Jakarta+Sans&display=swap");
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.tituloverde, .verdepagina, .subtituloverde {
+  color: green;
+}
+
+.titulonaranja, .naranjapagina, .subtitulonaranja {
+  color: #ff7300;
+}
+
+.naranjapagina {
+  font-size: 2.5rem;
+}
+
+.verdepagina {
+  font-size: 2.5rem;
+}
+
+.subtituloverde {
+  font-size: 1.5rem;
+}
+
+.subtitulonaranja {
+  font-size: 1.5rem;
+}
+/*# sourceMappingURL=Style.css.map */

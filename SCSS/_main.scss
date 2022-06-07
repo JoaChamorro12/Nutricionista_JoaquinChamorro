@@ -1,0 +1,39 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+@each $k, $v in $fuentes {
+    .font-#{$k}{
+        font-weight: $v;
+    }
+}
+
+@mixin verde {
+    color: green;    
+}
+.tituloverde{
+    @include verde;
+}
+
+%noclase{
+    color: rgb(255, 115, 0);
+}
+.titulonaranja{
+    @extend %noclase;
+}
+
+.naranjapagina{
+    @extend .titulonaranja;
+    font-size: 2.5rem;
+}
+.verdepagina{
+    @extend .tituloverde;
+    font-size: 2.5rem;
+}
+.subtituloverde{
+    @extend .tituloverde;
+    font-size: 1.5rem;
+}
+.subtitulonaranja{
+    @extend .titulonaranja;
+    font-size: 1.5rem;
+}
