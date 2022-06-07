@@ -66,16 +66,18 @@ body {
     box-sizing: border-box;
 }
 
-.itemText {
-    max-width: 50%;
-    text-align: center;
-}
-
 .pagina1 img {
     border-radius: 5px;
     max-height: 320px;
     align-items: right;
 }
+
+.itemText {
+    max-width: 50%;
+    text-align: center;
+}
+
+
 
 .logoe {
     display: flex;
@@ -96,21 +98,21 @@ body {
     align-items: center;
 }
 
-.form {
+/* .form {
     display: flex;
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
-}
+} */
 
-.formu {
+/* .formu {
     display: flex;
     flex-direction: column;
-}
+} */
 
-.botones form {
+/* .botones form {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 #pie {
     display: flex;
@@ -142,13 +144,13 @@ body {
     max-width: 70%;
 }
 
-.LabelContacto {
+/* .LabelContacto {
     display: inline-flex;
     width: 100px;
     text-align: left;
-}
+} */
 
-.inputBoxContacto {
+/* .inputBoxContacto {
     display: inline-flex;
     width: 250px;
     height: 25px;
@@ -159,12 +161,12 @@ body {
     display: inline-flex;
     border: solid 1px;
     border-radius: 5px;
-}
+} */
 
-.botonescontacto {
+/* .botonescontacto {
     display: inline-flex;
     justify-content: space-between;
-}
+} */
 
 .redes {
     display: inline-flex;

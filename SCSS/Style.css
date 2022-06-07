@@ -1,5 +1,5 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Plus+Jakarta+Sans&display=swap");
-
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -39,13 +39,12 @@ body {
 .subtitulonaranja {
   font-size: 1.5rem;
 }
-/*# sourceMappingURL=Style.css.map */
-
 
 * {
   padding: unset;
   margin: unset;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 * {
@@ -54,47 +53,39 @@ body {
   list-style-type: none;
 }
 
-.centerHeader {
+.centerHeader, .centerMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .centerMain {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
-#containerGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-      "header header header header header"
-      "contenido contenido contenido contenido contenido"
-      "footer footer footer footer footer";
-  min-height: 100vh;
-}
-
-#header {
-  grid-area: header;
-}
-
-#contenido {
-  grid-area: contenido;
-}
-
-#footer {
-  grid-area: footer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pagina1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pagina1 p {
@@ -103,7 +94,29 @@ body {
 
 .pagina1 .item {
   padding: 30px 30px 30px 0px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pagina1 img {
+  border-radius: 5px;
+  max-height: 320px;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+}
+
+.logoe, .tdesayunos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .itemText {
@@ -111,70 +124,47 @@ body {
   text-align: center;
 }
 
-.pagina1 img {
-  border-radius: 5px;
-  max-height: 320px;
-  align-items: right;
-}
-
-.logoe {
+.centercontacto, .recetario {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
-
 
 .recetario {
-  display: flex;
-  justify-content: center;
   margin: 20px 0px;
 }
 
-.tdesayunos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.form {
-  display: flex;
-  justify-content: center;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.formu {
-  display: flex;
-  flex-direction: column;
-}
-
-.botones form {
-  display: flex;
-  justify-content: space-between;
-}
-
 #pie {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #E6D5B8;
 }
 
 .divisor {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   content: "";
   margin-top: 20px;
   margin-bottom: 20px;
   margin-left: 15%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: black;
   height: 0.2px;
   width: 70%;
-
-}
-
-.centercontacto {
-  display: flex;
-  justify-content: center;
 }
 
 .formContacto {
@@ -182,31 +172,9 @@ body {
   max-width: 70%;
 }
 
-.LabelContacto {
-  display: inline-flex;
-  width: 100px;
-  text-align: left;
-}
-
-.inputBoxContacto {
-  display: inline-flex;
-  width: 250px;
-  height: 25px;
-  border-radius: 5px;
-}
-
-.inputBoxmensaje {
-  display: inline-flex;
-  border: solid 1px;
-  border-radius: 5px;
-}
-
-.botonescontacto {
-  display: inline-flex;
-  justify-content: space-between;
-}
-
 .redes {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
   display: inline-flex;
 }
 
@@ -217,17 +185,15 @@ body {
 .menuStyle {
   color: #ffffff !important;
   font-weight: bold;
-  text-shadow: 1px 1px rgb(92, 92, 92);
+  text-shadow: 1px 1px #5c5c5c;
 }
 
 .menuStyle:hover {
   color: #f5f5f5 !important;
   font-weight: bold;
-
 }
 
 /* Efecto Nav - Menu */
-
 .itemx {
   position: relative;
   line-height: 2;
@@ -239,6 +205,7 @@ body {
   width: 0%;
   height: 2px;
   background-color: #f5f5f5;
+  -webkit-transition: all 0.8s;
   transition: all 0.8s;
   position: absolute;
 }
@@ -270,11 +237,15 @@ body {
 }
 
 .divisor2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   content: "";
   margin-top: 20px;
   margin-bottom: 20px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: black;
   height: 0.2px;
   width: 50%;
@@ -290,13 +261,31 @@ body {
 }
 
 .menuActive {
-  color: rgb(236, 236, 236) !important;
+  color: #ececec !important;
+}
+/*# sourceMappingURL=Style.css.map */
+
+#containerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+      "header header header header header"
+      "contenido contenido contenido contenido contenido"
+      "footer footer footer footer footer";
+  min-height: 100vh;
 }
 
+#header {
+  grid-area: header;
+}
 
+#contenido {
+  grid-area: contenido;
+}
 
-/* Efecto Nav - Menu  FIN*/
-
+#footer {
+  grid-area: footer;
+}
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
@@ -346,9 +335,3 @@ body {
   }
 
 }
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {}
