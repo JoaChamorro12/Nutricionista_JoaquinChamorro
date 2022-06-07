@@ -1,0 +1,2 @@
+-Use el map para la mayoria de las fonts del trabajo. 
+-Para el mixin y extend la verdad que no encontraba un buen uso dentro del trabajo, pero ambos los use para los colores de los titulos, y los tamaños.
