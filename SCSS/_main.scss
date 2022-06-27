@@ -2,6 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+// Tamaño fuente
 @each $k,
 $v in $fuentes {
     .font-#{$k} {
@@ -9,6 +10,7 @@ $v in $fuentes {
     }
 }
 
+// Colores y tamaños titulos
 @mixin verde {
     color: green;
 }
@@ -45,29 +47,35 @@ $v in $fuentes {
     font-size: 1.5rem;
 }
 
+// Fin titulos
+
+// Reset margenes
 * {
     padding: unset;
     margin: unset;
     box-sizing: border-box;
 }
 
+// Limpiamos márgenes y estilos provenientes de HTML
 * {
-    /* Limpiamos márgenes y estilos provenientes de HTML */
     text-decoration: none;
     list-style-type: none;
 }
 
+// Centramos header
 .centerHeader {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+// Centramos main
 .centerMain {
     @extend .centerHeader;
     align-items: center;
 }
 
+// Centramos contenido de la pagina
 .pagina1 {
     display: flex;
     flex-direction: row;
@@ -90,31 +98,37 @@ $v in $fuentes {
     }
 }
 
+// Centramos Logo
 .logoe {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+// Delimitamos parrafos
 .itemText {
     max-width: 50%;
     text-align: center;
 }
 
+// Centramos desayunos
 .tdesayunos {
     @extend .logoe;
 }
 
+// Centramos formulario
 .centercontacto {
     display: flex;
     justify-content: center;
 }
 
+// Centramos recetas
 .recetario {
     @extend .centercontacto;
     margin: 20px 0px;
 }
 
+// Alineamos footer
 #pie {
     display: flex;
     flex-direction: row;
@@ -122,6 +136,7 @@ $v in $fuentes {
     background-color: #E6D5B8;
 }
 
+// Barra divisor
 .divisor {
     display: flex;
     content: "";
@@ -134,11 +149,25 @@ $v in $fuentes {
     width: 70%;
 }
 
+// Barrra divisora 2
+.divisor2 {
+    display: flex;
+    content: "";
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    background-color: black;
+    height: 0.2px;
+    width: 50%;
+}
+
+// Tamaño formulario
 .formContacto {
     min-width: 30%;
     max-width: 70%;
 }
 
+// Alineamos Assets
 .redes {
     display: inline-flex;
 }
@@ -158,7 +187,7 @@ $v in $fuentes {
     }
 }
 
-/* Efecto Nav - Menu */
+// Efecto Nav - Menu 
 
 .itemx {
     position: relative;
@@ -187,40 +216,33 @@ $v in $fuentes {
     left: 0;
 }
 
+
+// Fin efecto Nav - Menu 
+
+// Bordes imagenes
 .bordesimg {
     max-width: 50%;
     margin-right: 40px;
 }
 
+// Delimitamos texto
 .texto1 {
     max-width: 50%;
     text-align: center;
 }
 
+// Delimitamos texto recetas
 .textoclass {
     max-width: 497px;
 }
 
-.divisor2 {
-    display: flex;
-    content: "";
-    margin-top: 20px;
-    margin-bottom: 20px;
-    justify-content: center;
-    background-color: black;
-    height: 0.2px;
-    width: 50%;
-}
-
+// Acomodamos titulo
 .titleDesayuno {
     margin: 0px 0px 20px 0px;
     text-align: center;
 }
 
+// Acomodamos imagenes
 .imgDesayuno {
     margin: 0px 0px 20px 0px;
-}
-
-.menuActive {
-    color: rgb(236, 236, 236) !important;
 }

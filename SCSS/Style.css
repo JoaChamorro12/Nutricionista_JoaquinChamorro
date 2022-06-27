@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Plus+Jakarta+Sans&display=swap");
 body {
   font-family: 'Open Sans', sans-serif;
@@ -48,7 +47,6 @@ body {
 }
 
 * {
-  /* Limpiamos márgenes y estilos provenientes de HTML */
   text-decoration: none;
   list-style-type: none;
 }
@@ -167,6 +165,21 @@ body {
   width: 70%;
 }
 
+.divisor2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  content: "";
+  margin-top: 20px;
+  margin-bottom: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+  height: 0.2px;
+  width: 50%;
+}
+
 .formContacto {
   min-width: 30%;
   max-width: 70%;
@@ -193,7 +206,6 @@ body {
   font-weight: bold;
 }
 
-/* Efecto Nav - Menu */
 .itemx {
   position: relative;
   line-height: 2;
@@ -222,6 +234,10 @@ body {
   left: 0;
 }
 
+.menuActive {
+  color: #ececec !important;
+}
+
 .bordesimg {
   max-width: 50%;
   margin-right: 40px;
@@ -236,21 +252,6 @@ body {
   max-width: 497px;
 }
 
-.divisor2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  content: "";
-  margin-top: 20px;
-  margin-bottom: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: black;
-  height: 0.2px;
-  width: 50%;
-}
-
 .titleDesayuno {
   margin: 0px 0px 20px 0px;
   text-align: center;
@@ -259,79 +260,4 @@ body {
 .imgDesayuno {
   margin: 0px 0px 20px 0px;
 }
-
-.menuActive {
-  color: #ececec !important;
-}
 /*# sourceMappingURL=Style.css.map */
-
-#containerGrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-      "header header header header header"
-      "contenido contenido contenido contenido contenido"
-      "footer footer footer footer footer";
-  min-height: 100vh;
-}
-
-#header {
-  grid-area: header;
-}
-
-#contenido {
-  grid-area: contenido;
-}
-
-#footer {
-  grid-area: footer;
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
-
-  .pagina1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
-
-
-}
-
-@media (min-width: 576px) {
-
-  .pagina1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
-
-
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-  .pagina1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-  }
-
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-  .pagina1 {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-  }
-
-}
