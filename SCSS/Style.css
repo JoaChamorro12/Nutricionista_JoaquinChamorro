@@ -262,6 +262,28 @@ body {
 }
 /*# sourceMappingURL=Style.css.map */
 
+#containerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+      "header header header header header"
+      "contenido contenido contenido contenido contenido"
+      "footer footer footer footer footer";
+  min-height: 100vh;
+}
+
+#header {
+  grid-area: header;
+}
+
+#contenido {
+  grid-area: contenido;
+}
+
+#footer {
+  grid-area: footer;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
 
